@@ -1,3 +1,37 @@
+// -------------------------------------- Tooltips
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
+
+// -------------------------------------- Toast trigger
+const toastTrigger = document.getElementById("liveToastBtn");
+const toastLive = document.getElementById("liveToast");
+
+if (toastTrigger) {
+  toastTrigger.addEventListener("click", () => {
+    const toast = new bootstrap.Toast(toastLive);
+
+    toast.show();
+  });
+}
+
+// -------------------------------------- Form trigger
+const formBody = document.getElementById("formBody");
+
+const formTrigger = document.getElementById("formbtnsubmit");
+
+formTrigger.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const modalWindow = document.getElementById("exampleModal");
+  var modal = bootstrap.Modal.getInstance(modalWindow);
+  modal.hide();
+  formBody.value = "";
+});
+
+// -------------------------------------- Opens grade tables
 function openGrades(evt, chosenYear) {
   // Declare all variables
   var i, tabcontent, tablinks;

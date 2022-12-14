@@ -40,20 +40,60 @@
         >
           <!-- Left links -->
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#scrollspyAbout">About Me</a>
+            <li>
+              <a
+                class="nav-link"
+                href="#scrollspyAbout"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="About Me"
+              >
+                About Me
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scrollspyExp">Education</a>
+            <li>
+              <a
+                class="nav-link"
+                href="#scrollspyExp"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Education"
+              >
+                Education
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scrollspyPortf">Portfolio</a>
+            <li>
+              <a
+                class="nav-link"
+                href="#scrollspyPortf"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Portfolio"
+              >
+                Portfolio
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scrollspyPortf">Future Prospect</a>
+            <li>
+              <a
+                class="nav-link"
+                href="#scrollspyPortf"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Future Prospects"
+              >
+                Future Prospect
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scrollspyPortf">Hobbies</a>
+            <li>
+              <a
+                class="nav-link"
+                href="#scrollspyPortf"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Hobbies"
+              >
+                Hobbies
+              </a>
             </li>
             <li class="nav-item">
               <button
@@ -83,7 +123,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contact me</h1>
             <button
               type="button"
               class="btn-close"
@@ -92,11 +132,23 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="formbtnsubmit">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Title</label>
+                <label for="exampleInputEmail1" class="form-label formEmail"
+                  >Email</label
+                >
                 <input
                   type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label formTitle"
+                  >Title</label
+                >
+                <input
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
@@ -108,7 +160,7 @@
                 >
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="formBody"
                   rows="3"
                 ></textarea>
               </div>
@@ -121,11 +173,32 @@
                 >
                   Close
                 </button>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="liveToastBtn" type="submit" class="btn btn-primary">
+                  Send
+                </button>
               </div>
             </form>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div
+      id="liveToast"
+      class="toast align-items-center position-fixed bottom-0 end-0 text-bg-primary m-3"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div class="toast-body">Message Sent!</div>
+        <button
+          type="button"
+          class="btn-close me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
       </div>
     </div>
 
@@ -140,14 +213,20 @@
             20-ish. 4th Year CS Student, Amateur Software Developer and a
             Connoisseur of Video Games.
           </p>
-          <a title="LinkedIn" href="https://www.linkedin.com/in/anthonykuz/"
+          <a href="https://www.linkedin.com/in/anthonykuz/"
             ><img
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="LinkedIn"
               class="skill-obj anchor-link"
               src="./static/icons/linkedin-logo.svg"
               alt="LinkedIn icon"
           /></a>
-          <a title="GitHub" href="https://github.com/anthonykuz"
+          <a href="https://github.com/anthonykuz"
             ><img
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="GitHub"
               class="skill-obj anchor-link"
               src="./static/icons/github-logo.svg"
               alt="GitHub icon"
@@ -248,7 +327,6 @@
             programming.
           </p>
         </div>
-        <hr class="p-3 p-lg-4 pt-lg-2" />
 
         <h3 class="fw-bold text-end grades-title col-lg-6">Grades</h3>
         <!-- Dropdown button -->
@@ -538,17 +616,20 @@
                     JavaScript and HTML/CSS.
                   </p>
                   <a
-                    title="The Anime Index"
                     href="https://yellow-beach-0ba2fec03.2.azurestaticapps.net/"
                     ><img
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-title="Link to Project"
                       class="skill-obj anchor-link"
                       src="./static/icons/link.svg"
                       alt="Link icon"
                   /></a>
-                  <a
-                    title="GitHub Repository"
-                    href="https://github.com/anthonykuz/ead-ca3"
+                  <a href="https://github.com/anthonykuz/ead-ca3"
                     ><img
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-title="GitHub Repository"
                       class="skill-obj anchor-link"
                       src="./static/icons/github-logo.svg"
                       alt="GitHub icon"
@@ -732,10 +813,11 @@
                     Tools and languages used: Python, Django, JavaScript, SQL
                     and HTML/CSS.
                   </p>
-                  <a
-                    title="GitHub Repository"
-                    href="https://github.com/anthonykuz/happyapple"
+                  <a href="https://github.com/anthonykuz/happyapple"
                     ><img
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-title="GitHub Repository"
                       class="skill-obj anchor-link"
                       src="./static/icons/github-logo.svg"
                       alt="GitHub icon"
@@ -924,10 +1006,11 @@
                     Tools and languages used: Python, Django, JavaScript, SQL
                     and HTML/CSS.
                   </p>
-                  <a
-                    title="GitHub Repository"
-                    href="https://github.com/anthonykuz/sdev3_ca_proj"
+                  <a href="https://github.com/anthonykuz/sdev3_ca_proj"
                     ><img
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-title="GitHub Repository"
                       class="skill-obj anchor-link"
                       src="./static/icons/github-logo.svg"
                       alt="GitHub icon"
