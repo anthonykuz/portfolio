@@ -26,6 +26,11 @@
   margin-bottom: 1em;
 }
 
+.nav-obj {
+  width: 2em;
+  height: auto;
+}
+
 .work-cont {
   /* background-image: url("./work-bg.png"); */
   background-color: #fff;
@@ -100,6 +105,16 @@ ul {
 
 .anchor-link {
   padding: 0.1em;
+}
+
+.nav-anchor:hover {
+  background-color: #bcbdbf;
+  border-radius: 5px;
+  /* padding: 5px; */
+}
+
+.contact-btn {
+  margin-top: 0.3em;
 }
 
 .anchor-link:hover {
