@@ -1,0 +1,113 @@
+.hero-cont {
+  background-image: url("./static/additional/hero.png");
+  border-radius: 10px;
+}
+
+.education-cont {
+  /* background-image: url("./edu-b3.png"); */
+  background-color: #004c6c;
+  border-radius: 10px;
+}
+
+.logo-cont {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.edu-detail p,
+.edu-detail h2 {
+  color: #fff;
+}
+.work-cont {
+  /* background-image: url("./work-bg.png"); */
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.logos {
+  width: 90%;
+  height: auto;
+}
+
+.tud-logo {
+  width: 60%;
+  height: auto;
+  /* margin-bottom: 1em; */
+}
+
+.tud-cont {
+  margin-top: 0em;
+}
+
+.work-extra {
+  font-size: 0.8em;
+}
+
+.skills {
+  line-height: 3;
+  /* margin-top: -0.6em; */
+  padding-left: 0;
+}
+
+.title-heading {
+  text-align: center;
+}
+
+.aboutme {
+  margin-top: 1.3em;
+}
+
+.profpic {
+  width: 50%;
+  height: auto;
+  margin-left: 3em;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+.skill-obj {
+  width: 5%;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+.portfolio-icon {
+  width: 2%;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+.anchor-link {
+  padding: 0.1em;
+}
+
+.anchor-link:hover {
+  background-color: #bcbdbf;
+  border-radius: 5px;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.portfolio-work {
+  margin-right: 0.5em;
+}
+
+.portfolio-title {
+  padding-left: 0.8em;
+  margin-bottom: -0.5em;
+}
+
+.acc-custom {
+  padding: 1em;
+}
+
+.nav-custom {
+  max-width: max(0px, calc((100% - 120px) * 999));
+  overflow: hidden;
+}
