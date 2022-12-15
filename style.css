@@ -107,6 +107,10 @@ ul {
   padding: 0.1em;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .nav-anchor:hover {
   background-color: #bcbdbf;
   border-radius: 5px;
@@ -177,4 +181,10 @@ ul {
   width: 60%;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* ------------------------------------------- features.html */
+
+.features-car {
+  margin-top: 3em;
 }
