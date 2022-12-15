@@ -43,10 +43,10 @@
             <li>
               <a
                 class="nav-link"
-                href="#scrollspyAbout"
+                href="#scrollspyHome"
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
-                data-bs-title="About Me"
+                data-bs-title="Home"
               >
                 <img
                   class="nav-obj nav-anchor"
@@ -99,24 +99,10 @@
             <li>
               <a
                 class="nav-link"
-                href="#scrollspyPortf"
+                href="#scrollspyHobbi"
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
-                data-bs-title="Interests"
-              >
-                <img
-                  class="nav-obj nav-anchor"
-                  src="./static/icons/target.svg"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="#scrollspyPortf"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-title="Hobbies"
+                data-bs-title="Hobbies & Interests"
               >
                 <img
                   class="nav-obj nav-anchor"
@@ -232,7 +218,11 @@
     </div>
 
     <!-- Hero -->
-    <div class="hero-cont container my-4">
+    <div
+      id="scrollspyHome"
+      data-bs-spy="scroll"
+      class="hero-cont container my-4"
+    >
       <div
         class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
       >
@@ -272,7 +262,7 @@
     </div>
 
     <!-- About me -->
-    <div id="scrollspyAbout" data-bs-spy="scroll" class="container my-4">
+    <div class="container my-4">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 rounded-3 border shadow-lg">
         <div class="col-lg-6 p-3 p-lg-4 pt-lg-2">
           <h2 class="h2">A little about me</h2>
@@ -284,10 +274,10 @@
             passion for games can translate into a technical skill to build and
             give back to this industry.
           </p>
-          <p>
+          <!-- <p>
             <i>Thank you</i> for visiting this page and hope you find something
-            inspiring here.
-          </p>
+            inspiring here. 
+          </p>-->
         </div>
         <div class="col-lg-6 p-3 p-lg-4 pt-lg-2">
           <h2 class="h2">Key skills</h2>
@@ -569,7 +559,11 @@
       </div>
     </div>
 
-    <div id="scrollspyWork" class="container my-4 work-cont">
+    <div
+      id="scrollspyWork"
+      data-bs-spy="scroll"
+      class="container my-4 work-cont"
+    >
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 rounded-3 border shadow-lg">
         <div class="work-detail col-lg-6 p-3 p-lg-4 pt-lg-2">
           <h2 class="display-7 fw-bold lh-2">Work Experience</h2>
@@ -577,7 +571,8 @@
             I had an internship at Workhuman as a
             <b>Data Infrastructure Engineer</b>. I learned about pipeline
             development, database management and had my first experience
-            building a solo project in a busy workplace environment.
+            building a solo project in a busy workplace environment. I had
+            received a return offer shortly after my placement ended.
           </p>
           <p class="lead work-extra">
             Tools and languages used: HTML/CSS, JavaScript, AJAX, SQL, NoSQL,
@@ -638,7 +633,7 @@
                     created and allows you to query a number of different animes
                     and returns a list of facts in a clean and user friendly
                     way. The search does exception handling and the CSS is built
-                    from the ground up by me.
+                    from the ground up.
                   </p>
                   <p class="lead work-extra">
                     Tools and languages used: C#, Blazor Web Assembly,
@@ -773,11 +768,13 @@
                 <div class="work-detail col-lg-6 p-3 p-lg-4 pt-lg-1">
                   <h3 class="display-7 fw-bold lh-3">Data Growth Tool</h3>
                   <p class="aboutme">
-                    This project sends a GET request to an Azure API that I
-                    created and allows you to query a number of different animes
-                    and returns a list of facts in a clean and user friendly
-                    way. The search does exception handling and the CSS is built
-                    from the ground up by me.
+                    This tool was made as a reaction to Workhuman's overwhelming
+                    data growth over the last few years, as a means to track it
+                    over months and years. It allows you to import files
+                    generated from a script and view them in a graphical way.
+                  </p>
+                  <p class="aboutme">
+                    It was built to be modular and easy to maintain.
                   </p>
                   <p class="lead work-extra">
                     Tools and languages used: JavaScript, AJAX, SQL, UNIX
@@ -1151,6 +1148,36 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hobbies & Interests -->
+    <div id="scrollspyHobbi" data-bs-spy="scroll" class="container my-4">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 rounded-3 border shadow-lg">
+        <div class="col-lg-6 p-3 p-lg-4 pt-lg-2">
+          <h2 class="h2">Hobbies</h2>
+          <p class="aboutme">
+            You could probably piece together that i'm into video games and
+            anime, but i'm also really into TV and movies - I think the main
+            reason i'm drawn to these is because of the stories they can tell.
+            Outside of these, I enjoy trying out new foods and I've picked up
+            manga reading as well!
+          </p>
+        </div>
+        <div class="col-lg-6 p-3 p-lg-4 pt-lg-2">
+          <h2 class="h2">Interests</h2>
+          <p class="aboutme">
+            I would <i>absolutely love</i> to work on a video game sometime
+            soon, whether it being on a mechanical or engine level. This was my
+            original motivation for starting this career and it has not wained
+            since.
+          </p>
+          <p class="aboutme">
+            My dream game would be something that would utilize the advantages
+            of the medium and subvert the player with unique and evolving game
+            mechanics.
+          </p>
         </div>
       </div>
     </div>
