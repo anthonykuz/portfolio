@@ -4,7 +4,6 @@
 }
 
 .education-cont {
-  /* background-image: url("./edu-b3.png"); */
   background-color: #004c6c;
   border-radius: 10px;
 }
@@ -32,7 +31,6 @@
 }
 
 .work-cont {
-  /* background-image: url("./work-bg.png"); */
   background-color: #fff;
   border-radius: 10px;
 }
@@ -45,7 +43,6 @@
 .tud-logo {
   width: 60%;
   height: auto;
-  /* margin-bottom: 1em; */
 }
 
 .tud-cont {
@@ -58,7 +55,6 @@
 
 .skills {
   line-height: 3;
-  /* margin-top: -0.6em; */
   padding-left: 0;
 }
 
@@ -114,7 +110,6 @@ ul {
 .nav-anchor:hover {
   background-color: #bcbdbf;
   border-radius: 5px;
-  /* padding: 5px; */
 }
 
 .contact-btn {
@@ -144,7 +139,8 @@ ul {
   padding: 1em;
 }
 
-/* Style the tab */
+/* ------------------------------------------- Grades tabs */
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
